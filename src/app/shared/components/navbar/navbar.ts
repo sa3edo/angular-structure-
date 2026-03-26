@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ModalService } from '../../../core/services/modalServices/modal.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class Navbar {
 
+  private readonly modalService = inject(ModalService)
+
+  addNote(){
+    this.modalService.handleAddNote()
+  }
 }
