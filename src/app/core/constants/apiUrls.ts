@@ -6,7 +6,7 @@ export const appUrls = {
 
     signUp: `${environment.baseUrl}users/signUp`,
     signIn: `${environment.baseUrl}users/signIn`,
-    
+
 
 
 
@@ -15,5 +15,7 @@ export const appUrls = {
     // updateNote: `${environment.baseUrl}notes`,
     addNote: `${environment.baseUrl}notes`,
     // deleteNote: `${environment.baseUrl}notes`,
-    
+    // updateNote: `${environment.baseUrl}notes`,
+    updateNote: (id: string) => `${environment.baseUrl}notes/${id}`,
+    deleteNote: (id: string) => `${environment.baseUrl}notes/${id}`,
 } 
