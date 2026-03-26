@@ -1,7 +1,4 @@
-<section
-  id="register"
-  class="  flex flex-col justify-center py-4 sm:px-6 lg:px-8"
->
+<section id="register" class="flex flex-col justify-center py-4 sm:px-6 lg:px-8">
   <div class="sm:mx-auto sm:w-full sm:max-w-md">
     <h2 class="text-center text-3xl font-extrabold text-gray-900">Create an Account</h2>
   </div>
@@ -37,7 +34,7 @@
           <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
           <div class="mt-1">
             <input
-              type="text"
+              type="password"
               id="password"
               formControlName="password"
               class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-200"
@@ -79,6 +76,11 @@
             Register
           </button>
         </div>
+
+        <p>
+          Already have an account?
+          <a routerLink="/signIn" class="text-blue-600 hover:text-blue-800">Sign In</a>
+        </p>
       </form>
     </div>
   </div>
